@@ -8,8 +8,7 @@ interface Props  {
 
 const InputField = ({todo, setTodo, handleAdd}: Props) => {
   return (
-    <form className="input" onSubmit={handleAdd}
-        > 
+    <form className="input" onSubmit={(e) => handleAdd(e)}> 
       <input type="input" 
       placeholder='Enter task title' 
       className='input_field'
